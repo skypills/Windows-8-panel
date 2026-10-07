@@ -1,0 +1,48 @@
+body{
+    background-color: #222222;
+    color: #dedede;
+    margin: 2%;
+}
+
+header{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+h1, h3 {
+    font-weight: 400;
+}
+
+.panel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    gap: 40px;
+}
+
+.block1{
+    display: grid;
+    grid-template-columns: 90px 90px;
+    gap: 10px 10px;
+}
+
+.block2{
+    display: grid;
+    align-content: start;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 10px;
+}
+
+.box1{
+    width: 90px;
+    height: 90px;
+    background-color: #ff0066;
+}
+
+.box2{
+    width: 190px;
+    height: 90px;
+    background-color: #ff0066;
+}
