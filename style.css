@@ -15,34 +15,30 @@ h1, h3 {
     font-weight: 400;
 }
 
-.panel{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    gap: 40px;
+* {
+    box-sizing: border-box;
 }
 
-.block1{
+
+.block {
     display: grid;
-    grid-template-columns: 90px 90px;
-    gap: 10px 10px;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: repeat(5, 100px);
+    gap: 10px;
 }
 
 .block2{
     display: grid;
-    align-content: start;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px 10px;
+    grid-template-columns: 200px 100px;
+    grid-template-rows: repeat(5, 100px);
+    gap: 10px;
 }
 
-.box1{
-    width: 90px;
-    height: 90px;
-    background-color: #ff0066;
+
+.box {
+    background: #ff0060;
 }
 
-.box2{
-    width: 190px;
-    height: 90px;
-    background-color: #ff0066;
+.wide {
+    grid-column: 1 / 3;
 }
