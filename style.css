@@ -17,44 +17,49 @@ h1, h3 {
 
 .panel {
     display: flex;
-    gap: 40px;
     overflow-x: auto;
-    padding-bottom: 20px;
-    height: 480px; 
+    gap: 15px;
   }
   
-.tile-group {
+.block {
     display: grid;
     grid-template-rows: repeat(4, 80px); 
-    grid-auto-flow: column; 
+    grid-auto-flow: column dense; 
     grid-auto-columns: 80px;
     gap: 5px;
 }
-
   
-.tile.small {
+.small {
     grid-row: span 1;
     grid-column: span 1;
 }
   
-.tile.medium {
+.medium {
     grid-row: span 1;
     grid-column: span 2;
 }
   
-.tile.large {
+.large {
     grid-row: span 2;
     grid-column: span 2;
 }
 
-.bg-pink{
+.red{
     background-color: rgb(168, 35, 57);
 }
 
-.bg-orange{
+.orange{
     background-color: rgb(255, 115, 0);
 }
 
-.bg-yellow{
+.yellow{
     background-color: rgb(247, 210, 0);
+}
+
+.green{
+    background-color: rgb(17, 190, 17);
+}
+
+.blue{
+    background-color: rgb(3, 3, 220);
 }
